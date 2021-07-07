@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unvent</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="info">
+          <div class="logo">
+            <a href="#" class="logo-link">
+              <img src="img/logo.png" alt="Logo" />
+            </a>
+            <div class="logo-text">
+              <span class="bold">Профессиональный монтаж дымоходов</span> любой
+              сложности на территории Киева и Киевской обл.
+            </div>
+          </div>
+          <div class="adresse">
+            <img src="img/map.png" alt="карта" class="adresse-map" />
+            <div class="adresse-block">
+              <p><span class="bold"> Украина, Киев, </span> Васильковская 30</p>
+              <a class="adresse-link" href="#" data-modal-btn="map">Посмотреть на карте</a>
+            </div>
+
+          </div>
+          <div class="consult">
+            <a href="#" class="button button-consult" data-modal-btn="Consult">Консультация инженера</a>
+          </div>
+          <div class="relation">
+            <div class="phone">
+              <img
+                src="img/phone-icon.png"
+                alt="phone-icon"
+                class="phone-icon"
+              />
+              <a href="tel:+380672425878" class="phone-number bold"
+                >+38 067 242-58-78</a
+              >
+            </div>
+
+            <div class="relation-icons">
+              <a href="" class="relation-icon viber">
+                <img src="img/viber.png" alt="viber" />
+              </a>
+              <a href="" class="relation-icon telegram">
+                <img src="img/telegram.png" alt="telegram" />
+              </a>
+              <a href="" class="relation-icon whatsapp">
+                <img src="img/whatsapp.png" alt="whatsapp" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <nav class="nav">
+          <div class="container">
+            <ul class="menu bold">
+              <li class="menu-item">
+                <a href="#" class="menu-link">Калькулятор</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Услуги</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Наши новости</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Отзывы</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Консультация</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Преимущества</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Производство</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Вопрос-Ответ</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.container -->
+        </nav>
+        <div class="proposal">
+          <h1>
+            <span>Монтаж дымоходов из нержавеющей стали</span> для частных домов
+            и предприятий
+          </h1>
+          <div class="attractions">
+            <div class="attraction">
+              <span class="years">15</span>
+              <p>
+                <span class="bold">лет устанавливаем дымоходы</span> для частных
+                лиц и организаций
+              </p>
+            </div>
+            <div class="attraction">
+              <p>
+                <span class="bold">Бесплатный выезд инженера</span> в пределах
+                30 км. от Киева
+              </p>
+            </div>
+            <div class="attraction">
+              <p>
+                <span class="bold">Монтаж под ключ от 1 дня</span>, в наличии
+                все разрешительные документы
+              </p>
+            </div>
+          </div>
+          <div class="calculate">
+            <p>
+              Рассчитайте стоимость монтажа вашего дымохода за 1 минуту и
+              <span class="discount bold">получите скидку 15%</span>
+            </p>
+            <a href="#" class="button button-calculate" data-modal-btn="Calculate">
+              <img src="img/discount.png" alt="" class="calculate-icon" />
+              <span> Рассчитать стоимость монтажа и получить скидку </span>
+            </a>
+          </div>
+          <div class="certificate">
+            <p class="bold">Лицензии и сертификаты в наличии</p>
+            <div class="slider slick">
+              <div class="">
+                <img src="img/certificate.png" alt="certificate" />
+              </div>
+              <div class="">
+                <img src="img/certificate.png" alt="certificate" />
+              </div>
+              <div class="">
+                <img src="img/certificate.png" alt="certificate" />
+              </div>
+              <div class="">
+                <img src="img/certificate.png" alt="certificate" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/men.png" alt="men" class="men" />
+    </header>
+
+    <!-- модальное окно. консультация инженера -->
+
+    <div class="modal" id="Consult">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <h4 class="modal-header">Заказать звонок специалиста</h4>
+          <span class="modal-close">&#10006;</span>
+          <div class="modal-form">
+            <form action="#">
+              <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" id="name" placeholder="Ваше имя" required/>
+              </div>
+              <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                  placeholder="Телефон"
+                />
+              </div>
+              <a href="#" id="send" class="button button-send">Отправить</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- модальное окно. Рассчет стоимости -->
+
+    <div class="modal" id="Calculate">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <h4 class="modal-header">Заказать рассчет стоимости</h4>
+          <span class="modal-close">&#10006;</span>
+          <div class="modal-form">
+            <form action="#">
+              <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" id="name" placeholder="Ваше имя" required/>
+              </div>
+              <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                  placeholder="Телефон"
+                />
+              </div>
+              <a href="#" id="send" class="button button-send">Отправить</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="map">
+      
+      <span class="modal-close">&#10006;</span>
+      <div class="yandex-map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aac0fedc1c8124560032d7f7c61be1d3f15233517be9ab80d4cce9388f297cdb5&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
+      </div>
+    </div>
+
+
+    <!-- for slick slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+      });
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
