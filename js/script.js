@@ -8,10 +8,15 @@ document.addEventListener("DOMContentLoaded", () => {
     item.addEventListener("click", () => {
       let name = item.getAttribute("data-modal-btn");
       let modal = document.getElementById(`${name}`);
-      modal.style.display = "block";
+      // modal.style.display = "block";
+      console.log(modal.classList);
+      modal.classList.add("modal-show");
+      console.log(modal.classList);
       modal.addEventListener("click", (e) => {
         if (e.target.classList.contains("modal")) {
-          modal.style.display = "none";
+          // modal.style.display = "none";
+          modal.classList.remove("modal-show");
+
         }
       });
       close.forEach((item) => {
@@ -21,7 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function closeModal(modal, close) {
-    modal.style.display = "none";
+    // modal.style.display = "none";
+    modal.classList.remove("modal-show");
     close.removeEventListener("click", closeModal, false);
   }
 

@@ -760,7 +760,10 @@ h1 span {
   height: 100vh;
   background: rgba(0, 0, 0, 0.4);
   z-index: 5;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0.3s ease, opacity 0.3s linear;
+  transition: visibility 0.3s ease, opacity 0.3s linear;
 }
 
 .modal-dialog {
@@ -789,6 +792,11 @@ h1 span {
 .modal-form {
   max-width: 80%;
   margin: auto;
+}
+
+.modal-show {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal-close {
